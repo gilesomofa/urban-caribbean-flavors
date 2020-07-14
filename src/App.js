@@ -1,34 +1,26 @@
 import React from "react";
 import "./App.css";
+import Home from "./components/Home";
+import Nav from "./components/Nav";
+import Contact from "./components/Contact";
+import About from "./components/About";
+import Blog from "./components/Blog";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
-  console.log("hello world");
   return (
-    <div className="App">
-      <header className="App-header"></header>
-      <nav className="Nav">
-        <h1>Urban Caribbean Flavors</h1>
-      </nav>
-      <br /> <br /><br /> <br /> <br /> <br />
-        <br />
-        <br />
-        <br />
-      <div>
-        <h1 className="title">Goûts Urbains Antillais</h1>
-        <p className="subtitle">International Caribbean Culture and Lifestyle</p>
-        
+    <Router>
+      <div className="App">
+        <Nav />
+        <Switch>
+          <Route path="/" exact component={Home} />;
+          <Route path="/about" component={About} />;
+          <Route path="/contact" component={Contact} />;
+          <Route path="/blog" component={Blog} />;
+        </Switch>
       </div>
-      <footer className="Footer">
-        <ul>
-          <li>
-            <a href="">facebook</a>
-          </li>
-          <li>
-            <a href="">instagram</a>
-          </li>
-        </ul>
-      </footer>
-    </div>
+    </Router>
   );
 }
 
