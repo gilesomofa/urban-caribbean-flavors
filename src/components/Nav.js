@@ -4,12 +4,12 @@ import "../App.css";
 function Nav() {
   return (
     <div className="nav">
-      {/* <ul className="navList">
+      <ul className="navList">
       <li>Home</li>
       <li>About</li>
       <li>Contact</li>
       <li>Blog</li>
-      </ul> */}
+      </ul>
     </div>
   );
 }

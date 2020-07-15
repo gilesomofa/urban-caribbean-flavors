@@ -10,7 +10,6 @@
 }
 .nav .ul {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
 }
@@ -21,6 +20,7 @@
   padding-left: 15px;
   list-style: none;
   font-size: 16px;
+
 }
 
 .title {
@@ -60,29 +60,29 @@
   background-size: cover;
   background-position: center center;
   backface-visibility: hidden;
-  animation: App 20s linear infinite 0s;
+  animation: App 35s linear infinite 0s;
   animation-timing-function: ease-in-out;
-  background-image: url("./images/umbrellas.jpg");
+  background-image: url("./images/Sunset.jpg");
   width: 100%;
   height: 100vh;
   display: block;
 }
 
 @keyframes App {
-  0% {
+  16.6% {
     background-image: url("./images/Sunset.jpg");
   }
 
-  20% {
+  33.2% {
     background-image: url("./images/umbrellas.jpg");
   }
-  40% {
+  49.8% {
     background-image: url("./images/patio-table-and-chair-set-on-a-garden-2565222.jpg");
   }
-  80% {
+  66.5% {
     background-image: url("./images/turtles.jpg");
   }
-  100% {
+  83.2% {
     background-image: url("./images/OSJ.jpg");
   }
 }
