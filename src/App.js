@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
+// import MaterialNav from "./components/materialNav";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Blog from "./components/Blog";
@@ -13,6 +14,7 @@ function App() {
     <Router>
       <div className="App">
         <Nav />
+        {/* <MaterialNav /> */}
         <Switch>
           <Route path="/" exact component={Home} />;
           <Route path="/about" component={About} />;

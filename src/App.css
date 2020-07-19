@@ -10,19 +10,38 @@
 }
 .nav .ul {
   display: flex;
-  justify-content: space-evenly;
   width: 100%;
+
 }
 
-.nav .navList li {
+.nav .navList {
   display: flex;
   color: ivory;
-  padding-left: 15px;
   list-style: none;
   font-size: 16px;
+  padding-top: 15px;
+  margin-left: auto;
+  justify-self: flex-end;
+  justify-content: space-evenly;
+  width: 50%;
 
 }
+.nav .navLink{
+  color: ivory;
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  padding-top: 15px;
+  margin-left: auto;
+  width: 50%;
 
+
+}
+.navLink:hover{
+  color: rgb(172, 172, 167);
+  font-size: 17px;
+  
+}
 .title {
   display: flex;
   font-size: 50px;

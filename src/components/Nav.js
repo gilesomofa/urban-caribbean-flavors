@@ -5,10 +5,18 @@ function Nav() {
   return (
     <div className="nav">
       <ul className="navList">
-      <li>Home</li>
-      <li>About</li>
-      <li>Contact</li>
-      <li>Blog</li>
+        <li>
+          <a href="#" className="navLink">Home</a>
+        </li>
+        <li>
+        <a href="#" className="navLink">About</a>
+        </li>
+        <li>
+        <a href="#" className="navLink">Contact</a>
+        </li>
+        <li>
+        <a href="#" className="navLink">Blog</a>
+        </li>
       </ul>
     </div>
   );

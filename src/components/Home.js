@@ -14,7 +14,6 @@ function Home() {
           International Caribbean Culture and Lifestyle
         </p>
       </div>
-      
     </div>
   );
 }
