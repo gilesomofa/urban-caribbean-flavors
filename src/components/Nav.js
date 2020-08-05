@@ -6,16 +6,24 @@ function Nav() {
     <div className="nav">
       <ul className="navList">
         <li>
-          <a href="#" className="navLink">Home</a>
+          <a href="< Home />" className="navLink">
+            Home
+          </a>
         </li>
         <li>
-        <a href="#" className="navLink">About</a>
+          <a href="< About />" className="navLink">
+            About
+          </a>
         </li>
         <li>
-        <a href="#" className="navLink">Contact</a>
+          <a href="< Form />" className="navLink">
+            Contact
+          </a>
         </li>
         <li>
-        <a href="#" className="navLink">Blog</a>
+          <a href="< Blog />" className="navLink">
+            Blog
+          </a>
         </li>
       </ul>
     </div>
