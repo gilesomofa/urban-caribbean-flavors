@@ -6,13 +6,13 @@ import About from "./components/About";
 import Form from "./components/Form";
 import Blog from "./components/Blog";
 import { BrowserRouter as Router } from "react-router-dom";
-import { Switch, Route } from "react-router";
+import { Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Nav />
+          <Nav />
         <Switch>
           <Route path="/" exact component={Home} />;
           <Route path="/about" component={About} />;

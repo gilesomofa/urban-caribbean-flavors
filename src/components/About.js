@@ -4,7 +4,7 @@ import "../App.css";
 function About() {
   return (
     <div>
-      <div className="aboutPageText">
+      <div className="aboutPage">
         <h1>Urbano</h1>
         <p>
           Welcome to Urban Caribbean Flavors. Our site examines the Urban

@@ -3,15 +3,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+.App {
+  height: 100vh;
+  width: 100vw;
+}
 .nav {
   display: flex;
   width: 100%;
   height: 60px;
+  background-color:  #800020;
 }
+.homePage {
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  backface-visibility: hidden;
+  animation: Home 35s linear infinite 0s;
+  animation-timing-function: ease-in-out;
+  background-image: url("./images/Sunset.jpg");
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+
 .nav .ul {
   display: flex;
   width: 100%;
-
 }
 
 .nav .navList {
@@ -24,9 +43,8 @@
   justify-self: flex-end;
   justify-content: space-evenly;
   width: 50%;
-
 }
-.nav .navLink{
+.nav .navLink {
   color: ivory;
   list-style: none;
   text-decoration: none;
@@ -34,13 +52,10 @@
   padding-top: 15px;
   margin-left: auto;
   width: 50%;
-
-
 }
-.navLink:hover{
+.navLink:hover {
   color: rgb(172, 172, 167);
   font-size: 17px;
-  
 }
 .title {
   display: flex;
@@ -74,20 +89,7 @@
   top: 10em;
 }
 
-.App {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  backface-visibility: hidden;
-  animation: App 35s linear infinite 0s;
-  animation-timing-function: ease-in-out;
-  background-image: url("./images/Sunset.jpg");
-  width: 100%;
-  height: 100vh;
-  display: block;
-}
-
-@keyframes App {
+@keyframes Home {
   16.6% {
     background-image: url("./images/Sunset.jpg");
   }
