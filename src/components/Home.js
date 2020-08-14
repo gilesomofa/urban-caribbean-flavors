@@ -1,8 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import "../App.css";
 
-function Home() {
-  return (
+class Home extends Component {
+
+  
+  render(){ 
+    return (
     <div className="homePage">
       <div className="title">
         <h1 className="urban">Urban </h1>
@@ -15,7 +18,9 @@ function Home() {
         </p>
       </div>
     </div>
+  
   );
+}
 }
 
 export default Home;

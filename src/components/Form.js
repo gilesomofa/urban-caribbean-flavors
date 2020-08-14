@@ -1,49 +1,130 @@
-import React from "react";
+import React, { Component } from "react";
 import "../App.css";
 
-function Form() {
-  return (
-    <div className="contactForm">
-      <form action="/mailingList" method="POST">
-        <fieldset>
-          <p>Are you a</p>
-          <div>
-            <label for="business">Business</label>
-            <input
-              type="radio"
-              id="business"
-              name="userType"
-              value="business"
-            />
-            <label for="visitor">Visitor</label>
-            <input type="radio" id="visitor" name="userType" value="visitor" />
-            <label for="resident">Resident</label>
-            <input
-              type="radio"
-              id="resident"
-              name="userType"
-              value="resident"
-            />
-          </div>
-          <label for="firstName">First name:</label>
-          <input type="text" id="firstName" name="firstName" />
-          <label for="lastName">Last name:</label>
-          <input type="text" id="lastName" name="lastName"></input>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email"></input>
-        </fieldset>
-        <button className="">Submit</button>
-      </form>
-      <div>
-        <p>
-          Here at Urban Caribbean Flavors, we are excited to share our <br />
-          passion for all things Caribbean with our visitors. Don't be a Bombo <br />
-          Rass and sign up for our newsletter and we will keep you informed of all of the amazing
-          activities that happen throughout the year down here in the islands.{" "}
-        </p>
-      </div>
-    </div>
-  );
-}
+//create initial state as empty strings to receive input for mailing list signup
 
+class Form extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      firstName: "",
+      lastName: "",
+      email: "",
+      businessName: "",
+      businessUrl: "",
+      isChecked: false,
+    };
+  }
+  //handlers for form text inputss
+  handleFirstNameChange = (event) => {
+    this.setState({
+      firstName: event.target.value,
+    });
+  };
+
+  handleLastNameChange = (event) => {
+    this.setState({
+      lastName: event.target.value,
+    });
+  };
+
+  handleEmailChange = (event) => {
+    this.setState({
+      email: event.target.value,
+    });
+  };
+
+  handleSubmit = (event) => {
+    alert(`${this.state.firstName} ${this.state.lastName} ${this.state.email}`);
+    event.preventDefault();
+  };
+
+  isChecked = () => {
+    console.log("checking radio checked or not");
+  };
+
+  //The render function is required for all react class Components, and remember
+  //A return is required and can only return one parent element. So make sure there is a wrapper of some sort
+  render() {
+    //holders for state to be sent to data base
+    const { firstName, lastName, email } = this.state;
+
+    return (
+      <div className="formContainer">
+        <div className="contactForm">
+          <div className="formText">
+            <h1>Hey, Don't Be Shy!</h1>
+            <br/>
+            <br/>
+            <p>
+              <h2>
+                We'd love to here from you. Let us know what we can do for you.
+              </h2>
+            </p>
+          </div>
+          <div className="comments">
+            <p>
+              <h4>Have a question or comment, let us know.</h4>
+            </p>
+            <input type="text" />
+            <button className="">Submit</button>
+          </div>
+          <form
+            onSubmit={this.handleSubmit}
+            action="/mailingList"
+            method="POST"
+          >
+            <div className="radio">
+              <label htmlFor="business">Business</label>
+              <input
+                type="radio"
+                id="business"
+                name="userType"
+                value="business"
+              />
+              <label htmlFor="visitor">Visitor</label>
+              <input
+                type="radio"
+                id="visitor"
+                name="userType"
+                value="visitor"
+              />
+              <label htmlFor="resident">Resident</label>
+              <input
+                type="radio"
+                id="resident"
+                name="userType"
+                value="resident"
+              />
+            </div>
+            <fieldset>
+              <label htmlFor="firstName">First name:</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                onChange={this.handleFirstNameChange}
+              />
+              <label htmlFor="lastName">Last name:</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                onChange={this.handleLastNameChange}
+              />
+              <label htmlFor="email">Email:</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                onChange={this.handleEmailChange}
+              />
+            </fieldset>
+            <button className="">Submit</button>
+          </form>
+        </div>
+      </div>
+    );
+  }
+}
 export default Form;
