@@ -1,11 +1,26 @@
-import React from "react";
-import "../App.css";
-function Flavors() {
-  return (
-    <div className="blogPage">
+import React, { Component } from 'react'
+
+export class Blog extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+      img: src="",
+      title: "",
+      subtitle: "",
+      bodyText: "",
       
-    </div>
-  );
+       
+    }
+  }
+  
+  render() {
+    return (
+      <div>
+        
+      </div>
+    )
+  }
 }
 
-export default Flavors;
+export default Blog

@@ -52,21 +52,11 @@ class Form extends Component {
     return (
       <div className="formContainer">
         <div className="contactForm">
-          <div className="formText">
-            <h1>Hey, Don't Be Shy!</h1>
-            <br/>
-            <br/>
-            <p>
-              <h2>
-                We'd love to here from you. Let us know what we can do for you.
-              </h2>
-            </p>
-          </div>
           <div className="comments">
             <p>
-              <h4>Have a question or comment, let us know.</h4>
+              <h3>Questions Comments</h3>
             </p>
-            <input type="text" />
+            <input type="text" placeholder="comments" />
             <button className="">Submit</button>
           </div>
           <form
@@ -98,26 +88,29 @@ class Form extends Component {
               />
             </div>
             <fieldset>
-              <label htmlFor="firstName">First name:</label>
+              <label htmlFor="firstName"></label>
               <input
                 type="text"
                 id="firstName"
                 name="firstName"
                 onChange={this.handleFirstNameChange}
+                placeholder="First Nate"
               />
-              <label htmlFor="lastName">Last name:</label>
+              <label htmlFor="lastName"></label>
               <input
                 type="text"
                 id="lastName"
                 name="lastName"
                 onChange={this.handleLastNameChange}
+                placeholder="Last Nate"
               />
-              <label htmlFor="email">Email:</label>
+              <label htmlFor="email"></label>
               <input
                 type="text"
                 id="email"
                 name="email"
                 onChange={this.handleEmailChange}
+                placeholder="Email"
               />
             </fieldset>
             <button className="">Submit</button>

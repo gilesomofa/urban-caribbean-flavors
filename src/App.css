@@ -90,7 +90,6 @@
   top: 10em;
 }
 
-
 .buttons {
   display: flex;
   justify-content: center;
@@ -117,31 +116,30 @@
   font-size: 22px;
   padding: 3rem;
 }
-.aboutPageText{
-    width: 50%;
-    letter-spacing: .03rem;
-
+.aboutPageText input {
+  width: 100%;
 }
-.aboutPageText h1{
-color:#45ad97;
-}
-.aboutPageText p{
-  margin-right: 25px;
-
-}
-.aboutPageDo{
+.aboutPageText {
   width: 50%;
+  letter-spacing: 0.03rem;
 }
-.aboutPageDo h1{
-  color:#800020 ;
-  margin-left: 25px;
-
+.aboutPageText .greenHead {
+  color: #45ad97;
 }
-  .aboutPageDo p{
-    margin-left: 25px;
-    letter-spacing: .03rem;
+.aboutPageText p {
+  margin-right: 25px;
+}
+.aboutPageDo {
+  width: 50%;
+  letter-spacing: 0.03rem;
+}
+.aboutPageText .redHead {
+  color: #800020;
+}
+/* .aboutPageDo p{
+    margin-right: 25px;
   
-  }
+  } */
 
 .contactForm {
   height: 100vh;
@@ -150,18 +148,22 @@ color:#45ad97;
   flex-direction: column;
   align-items: center;
   align-content: space-between;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   flex-direction: column;
-  background-size: cover;
+  margin-top: 12px;
+  /* background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./images/OSJ.jpg");
+    url("./images/OSJ.jpg"); */
 }
 .contactForm .formText {
-  height: 30%;
+  height: 20%;
   width: 40%;
   height: 30%;
   font-size: 20px;
   color: ivory;
+}
+.mailListForm {
+  width: 50%;
 }
 h1 {
   margin-bottom: 10px;
@@ -176,9 +178,18 @@ input[type="text"] {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+input::placeholder {
+  color: rgb(197, 197, 195);
+  opacity: 0.4;
+}
+input::placeholder:hover {
+  color: rgb(19, 19, 2);
+  opacity: 1;
+}
 
 fieldset {
-  width: 500px;
+  width: 570px;
+  margin-top: 5px;
   color: ivory;
 }
 .radio {
@@ -186,8 +197,12 @@ fieldset {
   justify-content: space-evenly;
   justify-items: flex-start;
   align-items: center;
+  margin-top: 10px;
   padding-bottom: 20px;
   color: ivory;
+}
+.comments {
+  width: 75%;
 }
 .comments p {
   margin-bottom: 10px;
@@ -195,6 +210,7 @@ fieldset {
   color: ivory;
 }
 .comments input[type="text"] {
+  width: 100%;
   height: 120px;
 }
 
