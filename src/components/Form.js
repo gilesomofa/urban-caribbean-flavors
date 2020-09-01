@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
 
-
 //create initial state as empty strings to receive input for mailing list signup
 
 class MyForm extends Component {
@@ -15,29 +14,21 @@ class MyForm extends Component {
       businessUrl: "",
       isChecked: false,
     };
+    this.onChange = this.onChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
   //handlers for form text inputss
-  handleFirstNameChange = (event) => {
-    this.setState({
-      firstName: event.target.value,
-    });
-  };
+  onChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
+  }
 
-  handleLastNameChange = (event) => {
-    this.setState({
-      lastName: event.target.value,
-    });
-  };
+  onSubmit(e) {
+    e.preventDefault();
+  }
 
-  handleEmailChange = (event) => {
-    this.setState({
-      email: event.target.value,
-    });
-  };
-
-  handleSubmit = (event) => {
+  handleSubmit = (e) => {
     alert(`${this.state.firstName} ${this.state.lastName} ${this.state.email}`);
-    event.preventDefault();
+    e.preventDefault();
   };
 
   isChecked = () => {
@@ -48,17 +39,16 @@ class MyForm extends Component {
   //A return is required and can only return one parent element. So make sure there is a wrapper of some sort
   render() {
     //holders for state to be sent to data base
-    const { firstName, lastName, email } = this.state;
+    const { firstName, lastName, email, isChecked } = this.state;
 
     return (
       <div className="formContainer">
         <div className="contactForm">
           <div className="comments">
-           
-              <h3>Questions Comments</h3>
-            
+            <h3>Questions Comments</h3>
+
             <input type="text" placeholder="comments" />
-            <button className="">Submit</button>
+            <button className="submitComment">Submit</button>
           </div>
           <form
             onSubmit={this.handleSubmit}
@@ -114,7 +104,7 @@ class MyForm extends Component {
                 placeholder="Email"
               />
             </fieldset>
-            <button className="">Submit</button>
+            <button className="submitGuestInfo">Submit</button>
           </form>
         </div>
       </div>

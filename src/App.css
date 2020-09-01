@@ -162,10 +162,10 @@
   font-size: 20px;
   color: ivory;
 }
-/* .mailListForm {
+.mailListForm {
   width: 50%;
-} */
-.contactForm .form{
+}
+.contactForm {
   width: 100%;
 }
 h1 {
@@ -192,9 +192,12 @@ input::placeholder:hover {
 }
 
 fieldset {
-  width: 570px;
+  width: 400px;
   margin-top: 5px;
   color: ivory;
+}
+.form{
+  width: 100%;
 }
 .radio {
   display: flex;
@@ -206,7 +209,8 @@ fieldset {
   color: ivory;
 }
 .comments {
-  width: 75%;
+  width: 100%;
+
 }
 .comments p {
   margin-bottom: 10px;

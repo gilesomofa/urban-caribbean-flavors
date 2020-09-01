@@ -31,7 +31,7 @@ function About() {
       {/* </div> */}
       </div>
       <div className="mailListForm">
-        <Form />
+        
       </div>
     </div>
   );

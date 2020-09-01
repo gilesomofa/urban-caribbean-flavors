@@ -17,7 +17,7 @@ function App() {
           <Route path="/" exact component={Home} />;
           <Route path="/about" component={About} />;
           <Route path="/gallery" component={Gallery} />;
-
+          <Route path="/contact" component={Form} />;
         </Switch>
       </div>
     </Router>

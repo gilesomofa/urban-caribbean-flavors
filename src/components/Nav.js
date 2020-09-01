@@ -12,14 +12,14 @@ function Nav() {
         </li>
         <li>
           <a href="/About " className="navLink">
-            About | Contact
+            About 
           </a>
         </li>
-        {/* <li>
+        <li>
           <a href="/Form " className="navLink">
             Contact
           </a>
-        </li> */}
+        </li>
         <li>
           <a href="/Gallery" className="navLink">
             Gallery
