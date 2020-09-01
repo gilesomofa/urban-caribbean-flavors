@@ -134,7 +134,7 @@
   letter-spacing: 0.03rem;
 }
 .aboutPageText .redHead {
-  color: #800020;
+  color: #ee8c3a;
 }
 /* .aboutPageDo p{
     margin-right: 25px;
@@ -162,8 +162,11 @@
   font-size: 20px;
   color: ivory;
 }
-.mailListForm {
+/* .mailListForm {
   width: 50%;
+} */
+.contactForm .form{
+  width: 100%;
 }
 h1 {
   margin-bottom: 10px;
@@ -181,6 +184,7 @@ input[type="text"] {
 input::placeholder {
   color: rgb(197, 197, 195);
   opacity: 0.4;
+  font-size: 18px;
 }
 input::placeholder:hover {
   color: rgb(19, 19, 2);
@@ -214,7 +218,7 @@ fieldset {
   height: 120px;
 }
 
-@keyframes About {
+@keyframes Gallery {
   0% {
     background-image: url("./images/Sunset.jpg");
   }

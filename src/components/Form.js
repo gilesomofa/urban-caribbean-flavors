@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "../App.css";
 
+
 //create initial state as empty strings to receive input for mailing list signup
 
-class Form extends Component {
+class MyForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -53,9 +54,9 @@ class Form extends Component {
       <div className="formContainer">
         <div className="contactForm">
           <div className="comments">
-            <p>
+           
               <h3>Questions Comments</h3>
-            </p>
+            
             <input type="text" placeholder="comments" />
             <button className="">Submit</button>
           </div>
@@ -94,7 +95,7 @@ class Form extends Component {
                 id="firstName"
                 name="firstName"
                 onChange={this.handleFirstNameChange}
-                placeholder="First Nate"
+                placeholder="First Name"
               />
               <label htmlFor="lastName"></label>
               <input
@@ -102,7 +103,7 @@ class Form extends Component {
                 id="lastName"
                 name="lastName"
                 onChange={this.handleLastNameChange}
-                placeholder="Last Nate"
+                placeholder="Last Name"
               />
               <label htmlFor="email"></label>
               <input
@@ -120,4 +121,4 @@ class Form extends Component {
     );
   }
 }
-export default Form;
+export default MyForm;

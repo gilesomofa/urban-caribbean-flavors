@@ -21,8 +21,8 @@ function Nav() {
           </a>
         </li> */}
         <li>
-          <a href="/Blog" className="navLink">
-            Blog
+          <a href="/Gallery" className="navLink">
+            Gallery
           </a>
         </li>
       </ul>
