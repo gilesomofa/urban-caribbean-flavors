@@ -10,67 +10,84 @@
 .nav {
   display: flex;
   width: 100%;
-  height: 60px;
-  background-color: #800020;
+  height: 700px;
+  background-image: url("./images/beachoverhead.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+
+  
+  /* background-color: #800020; */
+  align-items: center;
+  padding-bottom: 10px;
 }
 .homePage {
   width: 100%;
   height: 100vh;
-  background-position: center center;
+  /* background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  backface-visibility: hidden;
+  backface-visibility: hidden; */
   /* background-image: url("./images/Sunset.jpg"); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("./images/Sunset.jpg");
-
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), */
+    /* url("./images/Sunset.jpg");    */
   width: 100%;
   height: 100vh;
   display: block;
+}
+.homePage h1{
+  font-size: 85px;
+  padding-left: 1em;
+
 }
 
 .nav .ul {
   display: flex;
   width: 100%;
+
 }
 
 .nav .navList {
   display: flex;
   color: ivory;
   list-style: none;
-  font-size: 16px;
-  padding-top: 15px;
+  /* padding-top: 15px; */
   margin-left: auto;
   justify-self: flex-end;
   justify-content: space-evenly;
   width: 50%;
+  bottom: -2em;
 }
 .nav .navLink {
   color: ivory;
   list-style: none;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 25px;
   padding-top: 15px;
   margin-left: auto;
   width: 50%;
 }
 .navLink:hover {
-  color: rgb(172, 172, 167);
-  font-size: 17px;
+  color: #45ad97;
+  font-size: 28px;
 }
 .title {
   display: flex;
-  font-size: 50px;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  text-shadow: 2px 2px rgba(105, 105, 105, 0.7);
+  text-shadow: 1px 1px rgba(105, 105, 105, 0.7);
   text-align: center;
-  vertical-align: middle;
-  position: relative;
-  top: 5em;
-  letter-spacing: 3px;
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-bottom: 1.7em;
+  /* vertical-align: middle; */
+  letter-spacing: .1em;
+  font-size: 150px;
 }
 .title .urban {
-  color: #800020;
+  color: #aa042d;
 }
 .title .caribbean {
   color: #ee8c3a;
@@ -78,15 +95,16 @@
 .title .flavors {
   color: #45ad97;
 }
-.subtitle {
+.nav p {
   color: #eee7e8;
   text-shadow: 2px 2px rgba(105, 105, 105, 0.7);
-  text-align: center;
-  font-size: 24px;
+  font-size: 25px;
   font-style: italic;
+  /* padding-left: .2em; */
+  padding-top: .5em;
   letter-spacing: 5px;
-  word-spacing: 5px;
-  position: relative;
+  word-spacing: 1px;
+  /* position: relative; */
   top: 10em;
 }
 
@@ -128,10 +146,11 @@
 }
 .aboutPageText p {
   margin-right: 25px;
+  font-size: 35px;
 }
 .aboutPageDo {
   width: 50%;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.05rem;
 }
 .aboutPageText .redHead {
   color: #ee8c3a;
@@ -222,21 +241,4 @@ fieldset {
   height: 120px;
 }
 
-@keyframes Gallery {
-  0% {
-    background-image: url("./images/Sunset.jpg");
-  }
 
-  25% {
-    background-image: url("./images/umbrellas.jpg");
-  }
-  50% {
-    background-image: url("./images/patio-table-and-chair-set-on-a-garden-2565222.jpg");
-  }
-  75% {
-    background-image: url("./images/turtles.jpg");
-  }
-  100% {
-    background-image: url("./images/OSJ.jpg");
-  }
-}
