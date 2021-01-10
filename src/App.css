@@ -7,84 +7,73 @@
   height: 100vh;
   width: 100vw;
 }
-.nav {
+.navContainer{
   display: flex;
-  width: 100%;
-  height: 700px;
-  background-image: url("./images/beachoverhead.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  
-
-  
-  /* background-color: #800020; */
+  flex-direction: row;
+  height: 8em;
+  justify-content: space-around;
+  justify-items: flex-start;
   align-items: center;
-  padding-bottom: 10px;
 }
-.homePage {
-  width: 100%;
-  height: 100vh;
-  /* background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  backface-visibility: hidden; */
-  /* background-image: url("./images/Sunset.jpg"); */
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), */
-    /* url("./images/Sunset.jpg");    */
-  width: 100%;
-  height: 100vh;
-  display: block;
+ a{
+text-decoration: none;
+font-size: 16px;
 }
-.homePage h1{
-  font-size: 85px;
-  padding-left: 1em;
-
+.navContainer h2{
+text-align: center;
+color: rgb(170, 4, 45);
 }
-
 .nav .ul {
   display: flex;
   width: 100%;
 
 }
-
-.nav .navList {
-  display: flex;
-  color: ivory;
-  list-style: none;
-  /* padding-top: 15px; */
-  margin-left: auto;
-  justify-self: flex-end;
-  justify-content: space-evenly;
-  width: 50%;
-  bottom: -2em;
-}
-.nav .navLink {
-  color: ivory;
+li{
   list-style: none;
   text-decoration: none;
-  font-size: 25px;
-  padding-top: 15px;
-  margin-left: auto;
-  width: 50%;
 }
-.navLink:hover {
+.nav .navList :hover {
   color: #45ad97;
-  font-size: 28px;
+  font-size: 22px;
+}
+.homePage {
+  background-image: url("./images/carnaval\ ladies.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 60vh;
+  display: block;
+}
+.homePage #tagline{
+  font-size: 50px;
+  padding-left: 1em;
+  color:  rgb(170, 4, 45);
+  padding-left: 2em;
+  padding-top: 2em;
 }
 .title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  text-shadow: 1px 1px rgba(105, 105, 105, 0.7);
   text-align: center;
   padding-top: 2em;
   padding-left: 1em;
-  padding-bottom: 1.7em;
-  /* vertical-align: middle; */
+  padding-bottom: 1.7em; 
+  vertical-align: middle;
   letter-spacing: .1em;
-  font-size: 150px;
+}
+.cuisine {
+  font-style: italic;
+  color:  white;
+  text-align: center;
+  padding-top: 35px;
+}
+.cuisine h2{
+  letter-spacing: 5px;
+
 }
 .title .urban {
   color: #aa042d;
@@ -120,45 +109,42 @@
 }
 .aboutPageContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: justify;
-  padding-top: 10px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("./images/turtles.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  /* animation: About 35s linear infinite 0s;
-  animation-timing-function: ease-in-out; */
   color: ivory;
   height: 100vh;
   font-size: 22px;
   padding: 3rem;
 }
 .aboutPageText input {
-  width: 100%;
+  width: 50%;
 }
 .aboutPageText {
   width: 50%;
   letter-spacing: 0.03rem;
+  height: 50vh;
 }
 .aboutPageText .greenHead {
   color: #45ad97;
 }
 .aboutPageText p {
   margin-right: 25px;
-  font-size: 35px;
+  font-size: 30px;
 }
-.aboutPageDo {
-  width: 50%;
-  letter-spacing: 0.05rem;
-}
+
 .aboutPageText .redHead {
   color: #ee8c3a;
 }
-/* .aboutPageDo p{
-    margin-right: 25px;
+.aboutPageDo p{
+  margin-right: 25px;
+  font-size: 30px;
+  width: 100%;
   
-  } */
+  }
 
 .contactForm {
   height: 100vh;

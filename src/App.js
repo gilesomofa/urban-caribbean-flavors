@@ -4,6 +4,8 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
 import Form from "./components/Form";
+import Login from "./components/Login";
+
 import Gallery from "./components/Gallery";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Switch, Route } from "react-router-dom";
