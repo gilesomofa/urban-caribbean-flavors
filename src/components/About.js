@@ -6,33 +6,30 @@ import Form from "../components/Form";
 function About() {
   return (
     <div className="aboutPageContainer">
+      <div className = "aboutTopper"><h3>Join our member's portal <span>"ISLAND TIMES" </span> for tips from other Carribean travelers and locals</h3>
+      <button className="signup">Sign Up Today</button></div>
       <div className="aboutPageText">
         <h1 className="greenHead">Who are we?</h1>
         <p>
-          First and foremost we are a team of learners! We are also creatives, designers, musicians, and artists.
-          Whether by birth, virtue of engagement, exposure, and/or
-          travel, we are passionate about Caribbean culture, history, arts,
-          music, sustainability, and let's not forget, food. We live in
+          First and foremost we are a team of learners who are passionate about Caribbean culture, history, arts,
+          music, and let's not forget, food. We live in
           different locations internationally and enjoy traveling to our
           respective islands to soak up the vibes and inspiration as often as we
           can. 
         </p>
         <div className="aboutPageDo">
+        
+      </div>
         <br/><br/>
         <h1 className="redHead">What Do We Do?</h1>
         <p>
-          Our website is inspired by and highlights the growing network of
-          ecologically minded travelers, traditionalists, artesans,
-          musicians, scholars,and businesses who operate in equitable, sustainable, 
-          and culturally
-          responsive ways. We will share the stories of these inspiring
-          characters who champion the valued principals of the Caribbean
-          Character. It is our mission to amplify the reach, engagement, and
-          success of these people and their projects. We also hope you share you 
-          stories and experiences in our app. 
+          We are here to make your trip to the islands more enjoyable, whether you're cruising through or spending a couple weeks traveling around and want to go beyond being a tourist. We will share the stories of  inspiring places and the 
+          people who champion the valued principals of the Caribbean
+          Character and Culture. It is our mission to amplify the reach, engagement, and
+          success of these people and their projects. We will also look forward to hearing your stories about your journey in the islands as well. You can share them in our members app. Click the link to sign up.
         </p>
       </div>
-      </div>
+      
       <div className="mailListForm">
         
       </div>
