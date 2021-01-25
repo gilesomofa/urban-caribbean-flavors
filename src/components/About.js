@@ -25,8 +25,7 @@ function About() {
         <p>
           We are here to make your trip to the islands more enjoyable, whether you're cruising through or spending a couple weeks traveling around and want to go beyond being a tourist. We will share the stories of  inspiring places and the 
           people who champion the valued principals of the Caribbean
-          Character and Culture. It is our mission to amplify the reach, engagement, and
-          success of these people and their projects. We will also look forward to hearing your stories about your journey in the islands as well. You can share them in our members app. Click the link to sign up.
+          Hospitality, Character and Culture. We will also look forward to hearing your stories about your journey in the islands as well. You can share them in our members app. Click the link to sign up.
         </p>
       </div>
       
