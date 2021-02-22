@@ -108,6 +108,7 @@ li{
   text-align: center;
   justify-content:center;
   align-items: center;
+  position: fixed;
 }
 .signupContainer{
   display: flex;
