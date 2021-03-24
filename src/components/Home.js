@@ -5,12 +5,12 @@ class Home extends Component {
 	render() {
 		return (
 			<div className='homePage'>
-				<div className='signupContainer'>
+				{/* <div className='signupContainer'>
 					<input type='text' placeholder='Email' />
 					<input type='text' placeholder='Password' />
 					<button className='login'>Sign Up</button>
 					<button className='login'>Member Login</button>
-				</div>
+				</div> */}
 			</div>
 		);
 	}
