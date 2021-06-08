@@ -26,7 +26,6 @@
    font-size: small;
 }
 .navContainer h3{ 
-  
   margin-right: 20px;
   font-size: small;
 }
@@ -118,7 +117,8 @@ li{
 }
 .signupContainer{
   display: flex;
-  flex-direction: column;
+  width:100%;
+
 }
   
 .homePage h1{
@@ -132,11 +132,7 @@ li{
   color:#ee8c3a;
   /* margin-top: 40px; */
 }
-input{
-  flex-direction: column;
-  background-color: #45ad97;
-  border-radius: 6%;
-}
+
 input ::placeholder{
   color: azure;
 }
@@ -153,7 +149,7 @@ input ::placeholder{
   align-items: flex-start;
   text-align: center;
   padding-top: 2em;
-  padding-bottom: 1.7em; 
+  padding-bottom: 2em; 
   vertical-align: middle;
   letter-spacing: .1em;
 }
@@ -173,8 +169,7 @@ input ::placeholder{
   height: 3em;
   border-radius: 10px;
   margin-top: 2em;
-  color: azure;
-  background-color: #aa042d;
+  color: #aa042d;
 }
 
 .Boxes {
@@ -186,13 +181,14 @@ input ::placeholder{
   flex-direction: column;
   text-align: justify;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./images/turtles.jpg");
+    url("./images/white-and-black-moon-with-black-skies-and-body-of-water-748626.jpg");
+  
   background-size: cover;
   background-repeat: no-repeat;
   color: ivory;
   height: 100vh;
-  font-size: 22px;
-  padding: 3rem;
+  font-size: 20px;
+  padding-left: 35px;
 }
 .aboutPageText input {
   width: 50%;
@@ -207,14 +203,14 @@ input ::placeholder{
 }
 .aboutPageText p {
   margin-right: 25px;
-  font-size: 25px;
+  font-size: 20px;
 }
 .aboutPageText .redHead {
   color: #ee8c3a;
 }
 .aboutPageDo p {
   margin-right: 25px;
-  font-size: 25px;
+  font-size: 20px;
   width: 100%;
   }
   .aboutTopper{
@@ -258,7 +254,7 @@ text-align: center;
 input[type="text"] {
   display: block;
   padding: 12px 20px;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
   width: 100%;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -266,11 +262,8 @@ input[type="text"] {
 input::placeholder {
   color: rgb(197, 197, 195);
   opacity: 0.4;
-  font-size: 18px;
-}
-input::placeholder:hover {
-  color: rgb(19, 19, 2);
-  opacity: 1;
+  font-size: 12px;
+  letter-spacing: 1.5px;
 }
 
 fieldset {
@@ -304,4 +297,8 @@ fieldset {
   height: 120px;
 }
 
-
+.aboutTopper h3{
+  padding-top: 20px;
+}
+.button.signup{
+background: none;}

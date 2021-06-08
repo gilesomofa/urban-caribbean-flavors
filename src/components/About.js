@@ -6,8 +6,7 @@ import Form from "../components/Form";
 function About() {
   return (
     <div className="aboutPageContainer">
-      <div className = "aboutTopper"><h3>Join our member's portal <span>"ISLAND TIMES" </span> for tips from other Carribean travelers and locals</h3>
-      <button className="signup">Sign Up Today</button></div>
+      
       <div className="aboutPageText">
         <h1 className="greenHead">Who are we?</h1>
         <p>
@@ -23,11 +22,13 @@ function About() {
         <br/><br/>
         <h1 className="redHead">What Do We Do?</h1>
         <p>
-          We are here to make your trip to the islands more enjoyable, whether you're cruising through or spending a couple weeks traveling around and want to go beyond being a tourist. We will share the stories of  inspiring places and the 
-          people who champion the valued principals of the Caribbean
-          Hospitality, Character and Culture. We will also look forward to hearing your stories about your journey in the islands as well. You can share them in our members app. Click the link to sign up.
+          We are here to make your trip to the islands more enjoyable. Cruising through? Visiting for a week? Expat? Local? We got your back. We are about creating an amazing experience for all. We are about creating a thriving, healthy, inclusive community. We support local businesses, artesans, culture, sustainability. 
+  
         </p>
+        <div className = "aboutTopper"><h3>Join our member's portal <span>" USVI BEYOND BEACHES" </span> for tips from other Carribean travelers and locals</h3>
+      <button className="signup">Sign Up Today</button></div>
       </div>
+      
       
       <div className="mailListForm">
         
