@@ -14,7 +14,7 @@
 }
 .navContainer{
   display: flex;
-  height: 8em;
+  height: 4em;
   justify-content: space-between;
   align-items: center;
   padding-left:3em;
@@ -23,6 +23,12 @@
 .navContainer h2{ 
    color:#aa042d;
    margin-right: 20px;
+   font-size: small;
+}
+.navContainer h3{ 
+  
+  margin-right: 20px;
+  font-size: small;
 }
 a{
 text-decoration: none;
@@ -40,7 +46,7 @@ font-size: 16px;
   transition: all .500ms ease-in-out;
 }
 .menu-btn_burger{
-   width: 50px;
+   width: 40px;
    height: 3px;
    border-top: 16px;
    background: #ee8c3a;
@@ -51,7 +57,7 @@ font-size: 16px;
 .menu-btn ::before{
   content: '';
   position: absolute;
-  width: 50px;
+  width: 40px;
   height: 3px;
   background:#aa042d;
   border-radius: 5px;
@@ -60,7 +66,7 @@ font-size: 16px;
 .menu-btn ::after{
   content: '';
   position: absolute;
-  width: 50px;
+  width: 40px;
   height: 3px;
   background: #45ad97;
   border-radius: 5px;
@@ -96,7 +102,7 @@ li{
   margin-right: 15px;
 }
 .homePage {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("./images/carnaval\ ladies.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),url("./images/carnaval\ ladies.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
