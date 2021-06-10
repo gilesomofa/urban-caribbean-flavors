@@ -22,10 +22,10 @@ function About() {
         <br/><br/>
         <h1 className="redHead">What Do We Do?</h1>
         <p>
-          We are here to make your trip to the islands more enjoyable. Cruising through? Visiting for a week? Expat? Local? We got your back. We are about creating an amazing experience for all. We are about creating a thriving, healthy, inclusive community. We support local businesses, artesans, culture, sustainability. 
+          We are here to make your trip to the islands more enjoyable. Cruising through? Visiting for a week? Expat? Local? We got your back. We are about creating an amazing experience for all. We are leveraging technology to create a thriving, healthy, community where ALL are welcomed. We support local businesses, artists, and culture. We champion sustainability and those who practice it on the islands. 
   
         </p>
-        <div className = "aboutTopper"><h3>Join our member's portal <span>" USVI BEYOND BEACHES" </span> for tips from other Carribean travelers and locals</h3>
+        <div className = "aboutTopper"><h3>Join our member's portal <span>" U.S.V.I. BEYOND BEACHES" </span> for tips from other Carribean travelers and locals</h3>
       <button className="signup">Sign Up Today</button></div>
       </div>
       

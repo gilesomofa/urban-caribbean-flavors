@@ -2,6 +2,9 @@ import React from 'react';
 import '../App.css';
 
 function Nav() {
+	
+	const menuItems = ['Home', 'Blog', 'About','Gallery', 'Contact' ];
+
 	return (
 		<div className='navContainer'>
 			<div className='title'>
@@ -14,8 +17,10 @@ function Nav() {
 				<p style={{ color: '#45ad97' }}> CUISINE</p> <p>CULTURE</p>{' '}
 				<p style={{ color: '#ee8c3a' }}>NIGHLTLIFE</p> <p>TRAVEL</p>
 			</h2>
-			<div className='menu-btn' onClick={() => alert('hi!')}>
+			<div className='hamburgerWrapper' >
+			<div className='menu-btn' onClick={() => {menuItems.map(item =><ul><li>{item}</li></ul>)}}>
 				<div className='menu-btn_burger'></div>
+			</div>
 			</div>
 		</div>
 	);
