@@ -16,20 +16,21 @@ function About() {
 				<div className='aboutPageDo'></div>
 				<br />
 				<br />
-				<h1 className='redHead'>What Do We Do?</h1>
+				<h1 className='redHead'>What do we do?</h1>
 				<p>
-					Beyond Beaches, was created to make your stay in the islands
-					more enjoyable. Cruising through? Visiting for a week? Expat? Local?
-					We got your back. We are about creating an amazing experience for all.
-					We are leveraging technology to create a thriving, healthy, community
-					where ALL are welcome. This site is part blog, app, and all Comm-unity
-					platform where we support local business, artists, and culture, share
-					information on current events and happenings of interest.
+					U.S.V.I. Beyond Beaches, was created to make your stay in the islands more
+					enjoyable. Cruising through? Visiting for a week? Expat? Local? We got
+					your back. We are about creating an amazing experience for all. We are
+					leveraging technology and local know how to create a thriving,
+					healthy, community where ALL are welcome. This site is part blog, app,
+					and all Comm-unity platform where we support local business, artists,
+					and culture, and share information on current events and happenings of
+					interest.
 				</p>
 				<div className='aboutTopper'>
 					<h3>
 						Join our member's portal <span>" U.S.V.I. BEYOND BEACHES" </span>{' '}
-						for tips from other Carribean travelers and locals.
+						for connections, info, and tips from other Carribean travelers and locals.
 					</h3>
 					<button className='signup'>Sign Up Today</button>
 				</div>
