@@ -33,7 +33,7 @@ class SignupForm extends React.Component {
               <input type="text" placeholder= 'confirm password' value={this.state.value} onChange={this.handleChange} />
             </label>
             <label>
-              <input type="text" placeholder= 'submit' value={this.state.value} onChange={this.handleChange} />
+              <input type="text" placeholder= 'click to join' value={this.state.value} onChange={this.handleChange} />
             </label>
           </form>
         );

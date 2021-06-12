@@ -14,37 +14,34 @@
 }
 .navContainer {
 	display: flex;
-	height: 4em;
+	height: 4.5em;
 	justify-content: space-between;
 	align-items: center;
 	padding-left: 3em;
 	padding-right: 3em;
-	/* padding-top: 5px; */
+	padding-top: 6px;
+	/* position: sticky;
+	top: 0; */
+	background-color: white;
+}
+.navContainer .ul {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	top: 5em;
+	height: 100%;
 }
 .navContainer h2 {
 	color: #aa042d;
 	margin-right: 20px;
-	font-size: small;
+	font-size: large;
 }
 .navContainer h3 {
 	margin-right: 20px;
-	font-size: small;
+	font-size: medium;
 }
-a {
-	text-decoration: none;
-	font-size: 16px;
-}
-.menu-btn {
-	position: relative;
-	display: flex;
-	padding-top: 35px;
-	justify-content: center;
-	align-self: center;
-	height: 80px;
-	width: 80px;
-	cursor: pointer;
-	transition: all 0.5ms ease-in-out;
-}
+
+/* ÷ */
 .menu-btn_burger {
 	width: 40px;
 	height: 3px;
@@ -60,7 +57,7 @@ a {
 	height: 3px;
 	background: #aa042d;
 	border-radius: 5px;
-	transition: all 0.5ms ease-in-out;
+	transition: all 0.3ms ease-in-out;
 }
 .menu-btn ::after {
 	content: '';
@@ -77,23 +74,24 @@ a {
 .menu-btn ::after {
 	transform: translateY(16px);
 }
-.hamburgerWrapper {
-	width: 50px;
-	display: flex;
-	flex-direction: column;
+
+a {
+	text-decoration: none;
+	font-size: 16px;
+	color: #aa042d;
+	top: 6em;
+}
+.links {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
 }
 
-li {
-	list-style: none;
-	text-decoration: none;
-}
-.navList {
-	display: flex;
-}
 .navList :hover {
 	color: #45ad97;
 	font-size: 17px;
 }
+
 #cuisine {
 	display: flex;
 	letter-spacing: 3px;
@@ -125,10 +123,11 @@ li {
 }
 .homePage p {
 	letter-spacing: 1.5px;
+	color: white;
 }
 .homePage h2 {
 	text-align: center;
-	color: rgb(170, 4, 45);
+	color: #aa042d;
 }
 .homePage button {
 	width: 75px;
@@ -147,57 +146,50 @@ li {
 	font-style: italic;
 	color: #ee8c3a;
 }
-/* .homePage [type='text'] {
-	width: 328px;
-	height: 40px;
-	color: azure;
-	margin-top: 25px;
-} */
-
 .signupContainer {
-	width: 230px;
+	width: 200px;
 	padding-right: 40px;
 	padding-bottom: 80px;
 	text-align: left;
 }
-.signupContainer p {
-	color: white;
-	font-size: 18px;
-}
 .profilePic {
-	height: 132px;
-  width: 132px;
-  border-radius: 50%;
-  background-image: url('./images/prince-akachi-J1OScm_uHUQ-unsplash.jpeg');
-  background-size: cover;
-  margin-bottom: 100px;
-  margin-top: 100px;
-  position:relative;
-  
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-image: url('./images/prince-akachi-J1OScm_uHUQ-unsplash.jpeg');
+	background-size: cover;
+	margin-bottom: 50px;
+	position: relative;
 }
 .signinContainer .leftSide {
-	background-image: url(./images/ocean4signup.jpg);
-  background-size: cover;
-	height: 960px;
-	width: 100%;
+	background-image: url(./images/turtles.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 768px;
+	width: 100;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-  padding-bottom: 50px;
+	padding-bottom: 200px;
 }
 .submitForm {
-	width: 432px;
+	width: 250px;
 }
 .submitForm input {
 	display: flex;
 	flex-direction: column;
 	margin-top: 15px;
-	border: 0.5px solid white;
+	border: 0.2px solid #ee8b3a5b;
 	background-color: transparent;
 	border-radius: 15px;
-  height: 62px;
-  width: 432px;
+	height: 42px;
+}
+.signinMessage {
+	font-size: 12px;
+	font-style: normal;
+	margin-top: 10px;
+	color: #fcf9fa;
 }
 input[type='text'] {
 	display: block;
@@ -209,8 +201,8 @@ input[type='text'] {
 }
 
 input::placeholder {
-	color: rgb(250, 250, 248);
-	font-size: 20px;
+	color: #aa042d;
+	font-size: 14px;
 	letter-spacing: 1.5px;
 	text-align: center;
 }
@@ -254,10 +246,10 @@ button {
 }
 .aboutPageContainer {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	text-align: justify;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-		url('./images/white-and-black-moon-with-black-skies-and-body-of-water-748626.jpg');
+		url('./images/Sunset.jpg');
 
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -267,7 +259,45 @@ button {
 	padding-left: 45px;
 	padding-top: 25px;
 }
+.aboutRightSide {
+	display: flex; 
+	flex-direction: row; 
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/giles.jpeg);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-size: contain;
+	border-radius: 10px;
+	height: 60%;
+	width: 50%;
+	margin-left: 2em;
+	margin-top: 3em;
+	border: #ee8b3a7a solid .5px;
+	margin-right: 40px;
+}
+.aboutRightSideHead {
+	width: 290px;
+	color: #45ad97;
+	text-align: left;
+	margin-left: 310px;
+	margin-top: 10px;
+	padding-right: 30px;
+}
+.contactMe{
+	position: absolute;
+	top: 520px;
+	right: 400px;
+	width: 150px;
+	height:40px;
+	border-radius: 3px;
+	background-color: #45ad97;
+	color: ivory;
+	border: transparent;
+}
 .aboutPageText input {
+	display: flex;
+	flex-direction: column;
 	width: 50%;
 }
 .aboutPageText {
@@ -321,15 +351,22 @@ button {
 	width: 50%;
 }
 .contactForm {
-	width: 100%;
+	width: 75%;
+	justify-self: center;
 }
 
-
+/* .rightSideWrapper {
+	display: flex;
+	height: 50%;
+	width: 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+} */
 
 fieldset {
 	width: 400px;
 	margin-top: 5px;
-	color: ivory;
+	color: rgba(196, 29, 29, 0.521);
 }
 
 .radio {
@@ -360,5 +397,3 @@ fieldset {
 .button.signup {
 	background: none;
 }
-
-

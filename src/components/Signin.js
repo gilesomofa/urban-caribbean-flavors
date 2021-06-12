@@ -6,11 +6,11 @@ class Signin extends Component {
 		return (
 			<main className='signinContainer'>
 				<section className='leftSide'>
-				<div className='profilePic'></div>
-
-					
-					{ <SignupForm/> }</section>
-				
+					<h2 style={{color: 'ivory', marginBottom: '20px'}}>COME IN THE WATER IS GREAT!</h2>
+				{/* <div className='profilePic'></div> */}
+					{ <SignupForm/> }
+				<p className="signinMessage">Already a member? Sign in</p>
+				</section>
 				<section className='rightSide'></section>
 			</main>
 		);
