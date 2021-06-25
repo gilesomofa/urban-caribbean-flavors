@@ -19,9 +19,11 @@ class SignupForm extends React.Component {
     
       render() {
         return (
+        <div>
+          
           <form className='submitForm' onSubmit={this.handleSubmit}>
             <label>
-              <input type="text" placeholder= 'name' value={this.state.value} onChange={this.handleChange} />
+              <input type="text" placeholder= 'username' value={this.state.value} onChange={this.handleChange} />
             </label>
             <label>
               <input type="text" placeholder= 'email' value={this.state.value} onChange={this.handleChange} />
@@ -32,10 +34,14 @@ class SignupForm extends React.Component {
             <label>
               <input type="text" placeholder= 'confirm password' value={this.state.value} onChange={this.handleChange} />
             </label>
-            <label>
-              <input type="text" placeholder= 'click to join' value={this.state.value} onChange={this.handleChange} />
-            </label>
+            
           </form>
+          <form >
+          <label>
+              <input type="text"  class= "signupFormSubmit" placeholder= 'click to join' value={this.state.value} onChange={this.handleChange} />
+            </label>
+            </form>
+          </div>
         );
       }
 }

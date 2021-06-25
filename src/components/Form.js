@@ -43,11 +43,14 @@ class MyForm extends Component {
 
     return (
       <div className="formContainer">
+        <section className="contactText">
+            <h1 className="contactHeader">As We Say On The Island <br />Wha' You Sayin'? <br />Feel Free To Reach <br />Out To Connect,  <br />Collaborate,Or Share.</h1>
+            
+          </section>
         <div className="contactForm">
           <div className="comments">
-            <h3>Questions Comments</h3>
 
-            <input type="text" placeholder="comments" />
+            <input type="text" placeholder="message"  />
             <button className="submitComment">Submit</button>
           </div>
           <form
@@ -106,6 +109,7 @@ class MyForm extends Component {
             </fieldset>
             <button className="submitGuestInfo">Submit</button>
           </form>
+          
         </div>
       </div>
     );
