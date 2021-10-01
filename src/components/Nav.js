@@ -11,12 +11,12 @@ function Nav() {
 				<h3 className='urban'>U.S.V.I. </h3>
 				<h3 className='caribbean'>BEYOND </h3>
 				<h3 className='flavors'>BEACHES </h3>
-			</div> */}
-			{/* <h2 id='cuisine'>
+			</div>  */}
+			  <h2 id='cuisine'>
 				{' '}
-				<p style={{ color: '#45ad97' }}> CUISINE</p> <p>CULTURE</p>{' '}
-				<p style={{ color: '#ee8c3a' }}>NIGHLTLIFE</p> 
-			</h2>   */}
+				<p style={{ color: '#45ad97' }}> Home</p> <p>Blog</p>{' '}
+				<p style={{ color: '#ee8c3a' }}>Contact Us</p> 
+			</h2>  
 
 			<div className='hamburgerWrapper'>
 				<div className='menu-btn' onClick={() => setOpen(!open)}>
@@ -28,4 +28,4 @@ function Nav() {
 	);
 }
 
-export default Nav;
+export default Nav; 

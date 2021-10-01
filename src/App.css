@@ -17,14 +17,15 @@
 	display: flex;
 	height: 4.5em;
 	/* justify-content:space-between; */
-	padding-left: 3em;
-	padding-right: 4.5em;
+	/* padding-left: 3em;
+	padding-right: 4.5em; */
 	padding-top: 35px;
 	background-color: transparent;
 	justify-content: flex-end;
 	position: absolute;
-	margin: 10px;
+	/* margin: 10px; */
 	width: 100%;
+	/* background-color: #fff; */
 }
 .navContainer .ul {
 	display: flex;
@@ -35,7 +36,6 @@
 	overflow: hidden;
 	background-color: transparent;
 	width: 100%;
-
 }
 
 .navContainer h2 {
@@ -53,7 +53,7 @@
 	font-weight: 400;
 }
 
-.menu-btn_burger {
+/* .menu-btn_burger {
 	width: 40px;
 	height: 3px;
 	border-top: 16px;
@@ -91,7 +91,7 @@ a {
 	font-size: 16px;
 	color: #aa042d;
 	top: 6em;
-}
+} */
 .links {
 	color: white;
 	text-decoration: none;
@@ -114,7 +114,7 @@ a {
 .homePage {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
 		url('./images/turtles.jpg');
-	background-position: center ;
+	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -152,11 +152,11 @@ a {
 	font-style: italic;
 	color: #ee8c3a;
 }
-.homeButtons  {
+.homeButtons {
 	display: flex;
 	margin-left: 100px;
 }
-.homeButtons button{
+.homeButtons button {
 	width: 130px;
 	height: 40px;
 	font-size: 14px;
@@ -165,7 +165,7 @@ a {
 	margin-right: 30px;
 	color: #fafdfc;
 	background-color: transparent;
-	border: solid .5px #ee8c3a;
+	border: solid 0.5px #ee8c3a;
 }
 
 .profilePic {
@@ -190,6 +190,7 @@ a {
 		url(./images/ocean4signup.jpg);
 	background-size: cover;
 	background-position: center;
+	border-radius: 8px;
 	flex: 1;
 	display: flex;
 	flex-direction: column;
@@ -199,6 +200,8 @@ a {
 .signupRightSide {
 	flex: 1;
 	height: 100vh;
+	border-radius: 8px;
+	border: #474a4d28 solid 0.3px;
 }
 .signupRightSide p {
 	margin-right: 25px;
@@ -253,7 +256,7 @@ a {
 	border-radius: 15px;
 	height: 38px;
 }
-.signupFormSubmit{
+.signupFormSubmit {
 	background-color: white;
 }
 input[type='text'] {
@@ -270,7 +273,7 @@ input[type='text'] {
 }
 
 input::placeholder {
-	color:#aa042d;
+	color: #aa042d;
 	font-size: 12px;
 	letter-spacing: 1.5px;
 	text-align: center;
@@ -291,10 +294,8 @@ input::placeholder {
 	flex-direction: column;
 	align-items: flex-start;
 	text-align: center;
-	padding-top: 2em;
-	padding-bottom: 2em;
-	vertical-align: middle;
 	letter-spacing: 0.1em;
+	justify-content: space-between;
 }
 .title .urban {
 	color: #aa042d;
@@ -461,4 +462,51 @@ fieldset {
 	background: none;
 	/* position: relative;
 	left: 200px; */
+}
+.blogContainer {
+	height: 100vh;
+	width: 100;
+	display: flex;
+	flex-direction: column;
+}
+button{
+	width: 100px;
+	height: 35px;
+	background-color: #fafdfc;
+	color: #aa042d;
+	border-color: #aa042d;
+
+}
+
+.beyondBlogTitle {
+	padding-top: 0.5em;
+	margin-left: 25px;
+	color: #aa042d;
+}
+.blogImage {
+	width: 100%;
+	height: 53vh;
+	background-image: url(./images/st\ thomas\ kids.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+margin-top: 45px;}
+.blogBody {
+	width: 50%;
+	height: 17vh;
+	margin: 45px;
+}
+.blogBodyButton {
+	border: none;
+	background-color: white;
+	color: #aa042e63;
+	font-size: 12px;
+}
+.blogBody h1 {
+	margin: 25px 0px;
+	font-weight: 400;
+	color: #474a4d;
+}
+.blogContainer h1 {
+	font-size: 42px;
+	font-weight: 300;
 }

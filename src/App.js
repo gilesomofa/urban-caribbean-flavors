@@ -8,6 +8,7 @@ import Dropdown from "./components/Dropdown"
 import Gallery from "./components/Gallery";
 import Signup from "./components/Signup";
 import SignupForm from "./components/SignupForm";
+import Blog from "./components/Blog";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Switch, Route } from "react-router-dom";
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/gallery" component={Gallery} />;
           <Route path="/signup" component={Signup} />;
           <Route path="/contact" component={Form} />;
+		  <Route path="/blog" component={Blog} />;
         </Switch>
       </div>
     </Router>
