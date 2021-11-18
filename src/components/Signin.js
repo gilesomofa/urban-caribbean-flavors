@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import "../App.css";
-import 
 
- class blogCarousel extends Component {
+export class Signin extends Component {
     render() {
         return (
             <div>
@@ -12,4 +10,4 @@ import
     }
 }
 
-export default blogCarousel
+export default Signin
